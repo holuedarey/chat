@@ -6,7 +6,7 @@
     const cors = require('cors')
     require('dotenv').config()
     const shortId = require('shortid') 
-    const dialogFlow = require('./dialogFlow')
+    const dialogFlow = require('./dialogflow');
 
     const app = express()
     app.use(cors())
