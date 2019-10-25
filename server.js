@@ -19,7 +19,11 @@
       secret: process.env.PUSHER_APP_SECRET,
       cluster: 'eu',
       encrypted: true
-    })
+    });
+
+    app.get('/', function(req, res){
+      res.send('it works');
+    });
 
     app.post('/message', async (req, res) => {
       // simulate actual db save with id and createdAt added
